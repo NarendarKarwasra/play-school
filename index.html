@@ -25,20 +25,19 @@
     <div class="container">
         <div class="navbar">
 
-            <div class="logo-div">
+            <a href="index.html" class="logo-div">
                 <img src="/img/logo.png" alt="logo">
-            </div>
+            </a>
 
             <!-- NAV LINKS -->
             <ul class="nav-links" id="navLinks">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">Academics</a></li>
                 <li><a href="#">Facilities</a></li>
-                <li><a href="#">Testimonials</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
             <!-- HAMBURGER -->
@@ -67,7 +66,7 @@
                     <div class="hero-heading">Learning Today For A Better Tomorrow</div>
                     <div class="hero-description">It is a long established that a reader will be distracted by the
                         readable content of a page when looking at its layout.</div>
-                    <button>Admission Open</button>
+                    <button class="submit-btn">Admission Open</button>
                 </div>
             </div>
             <div class="decoration-left" style="top: -26px; left: 0%;">
@@ -98,9 +97,13 @@
                             <h3>Kindergarden</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita incidunt eos labore.
                             </p>
-                            <button>Read More</button>
                         </div>
-                        <div class="offer-back-2"></div>
+                        <div class="offer-back-2">
+                            <button class="offer-button">Read More</button>
+                        </div>
+                        <div class="offer-alphabet">
+                            <img src="img/Aa.png" alt="">
+                        </div>
                     </div>
                     <div class="offer-card" style="background-color: rgb(219, 237, 253);;">
                         <div class="offer-count">
@@ -111,9 +114,12 @@
                             <h3>Kindergarden</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita incidunt eos labore.
                             </p>
-                            <button>Read More</button>
                         </div>
-                        <div class="offer-back-2" style="transform: rotate(3deg); border-color: rgb(10, 119, 215);">
+                        <div class="offer-back-2-mid">
+                            <button class="offer-button-mid">Read More</button>
+                        </div>
+                        <div class="offer-alphabet-mid">
+                            <img src="img/Bb.png" alt="">
                         </div>
                     </div>
                     <div class="offer-card" style="background-color: rgb(249, 247, 224);">
@@ -125,9 +131,13 @@
                             <h3>Kindergarden</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita incidunt eos labore.
                             </p>
-                            <button>Read More</button>
                         </div>
-                        <div class="offer-back-2" style="border-color: rgb(208, 199, 19);"></div>
+                        <div class="offer-back-2" style="border-color: rgb(208, 199, 19);">
+                            <button class="offer-button">Read More</button>
+                        </div>
+                        <div class="offer-alphabet">
+                            <img src="img/Cc.png" alt="">
+                        </div>
                     </div>
                 </div>
 
@@ -186,7 +196,7 @@
                             </div>
                         </div>
                         <div class="hero-content" style="padding-top: 0px;">
-                            <button>Explore</button>
+                            <button class="submit-btn" onclick="window.location.href='about.html'">Explore</button>
                         </div>
 
                     </div>
@@ -387,12 +397,9 @@
         <div class="hero-subheading">OUR BLOG</div>
                 <div class="hero-heading">Latest News & Articles</div>
 
-        <!-- Swiper Container -->
-        <div class="swiper mySwiper-blog">
-            <div class="swiper-wrapper">
-
-                <!-- Blog Card 1 -->
-                <div class="swiper-slide blog-card">
+        <div class="blog-main">
+            <div class="blog-left-section">
+                <div class="blog-card">
                     <div class="blog-image">
                         <img src="img/blog-1.webp" alt="">
                     </div>
@@ -405,7 +412,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide blog-card">
+                <div class="blog-card">
                     <div class="blog-image">
                         <img src="img/blog-2.webp" alt="">
                     </div>
@@ -418,9 +425,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide blog-card">
+            </div>
+            <div class="blog-right-section">
+                <div class="blog-card">
                     <div class="blog-image">
-                        <img src="img/blog-3.webp" alt="">
+                        <img src="img/blog-2.webp" alt="">
                     </div>
                     <div class="blog-content">
                         <span class="blog-category">EDUCATION / TEACHER</span>
@@ -431,48 +440,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide blog-card">
-                    <div class="blog-image">
-                        <img src="img/blog-4.webp" alt="">
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-category">EDUCATION / TEACHER</span>
-                        <h3 class="blog-heading">Eliminate Your Fears And Doubts About Day Care.</h3>
-                        <div class="blog-author">
-                            <i class="bi bi-person-circle" style="color: rgb(158, 158, 158); font-size: 30px;"></i>
-                            <p>Publish By <strong>Amit Sharma</strong></p>
-                        </div>
-                    </div>
+                <div class="blog-btn">
+                    <button onclick="window.location.href='blog.html'">Explore More</button>
                 </div>
-                <div class="swiper-slide blog-card">
-                    <div class="blog-image">
-                        <img src="img/blog-5.webp" alt="">
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-category">EDUCATION / TEACHER</span>
-                        <h3 class="blog-heading">Eliminate Your Fears And Doubts About Day Care.</h3>
-                        <div class="blog-author">
-                            <i class="bi bi-person-circle" style="color: rgb(158, 158, 158); font-size: 30px;"></i>
-                            <p>Publish By <strong>Amit Sharma</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide blog-card">
-                    <div class="blog-image">
-                        <img src="img/blog-6.webp" alt="">
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-category">EDUCATION / TEACHER</span>
-                        <h3 class="blog-heading">Eliminate Your Fears And Doubts About Day Care.</h3>
-                        <div class="blog-author">
-                            <i class="bi bi-person-circle" style="color: rgb(158, 158, 158); font-size: 30px;"></i>
-                            <p>Publish By <strong>Amit Sharma</strong></p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
+
+
     </div>
 </section>
 
@@ -666,9 +640,9 @@
                 <img src="img/Cloud.webp" style="margin-left: -80px;" alt="">
             </div>
             <div class="footer-main">
-                <div class="foot-logo">
+                <a href="index.html" class="foot-logo">
                     <img src="img/logo.png" alt="">
-                </div>
+                </a>
                 <div class="foot-devider"></div>
                 <div class="footer-policies">
                     <a href="#">Admission Enquiry</a>
@@ -752,7 +726,7 @@
 
 </body>
 
-
+<!-- navbar hemberger -->
 <script>
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
@@ -764,9 +738,22 @@
         hamburger.classList.toggle("active");
     });
 </script>
+<!-- for navbar click animation -->
+<script>
+    const links = document.querySelectorAll('.nav-links a');
 
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            // Remove active from all
+            links.forEach(l => l.classList.remove('active'));
 
+            // Add active to clicked one
+            this.classList.add('active');
+        });
+    });
+</script>
 
+<!-- activity image  -->
 <script>
     fetch("activity-card-img-1.html")
         .then(response => response.text())
@@ -777,7 +764,7 @@
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+<!-- swiper for testimonial -->
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 2,
@@ -792,7 +779,7 @@
         }
     });
 </script>
-
+<!-- swiper for blogs -->
 <script>
     var swiper = new Swiper(".mySwiper-blog", {
         slidesPerView: 1,
@@ -809,7 +796,7 @@
     });
 </script>
 
-
+<!-- swiper for team -->
 <script>
 
     var swiper = new Swiper(".mySwiper-team", {
@@ -827,5 +814,6 @@
         }
     });
 </script>
+
 
 </html>
