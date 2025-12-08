@@ -39,6 +39,18 @@ width: 30%;
 }
 
 
+
+
+    /* contact page */
+
+.contact-card {
+    height: 250px;
+    padding: 40px;
+}
+
+
+
+
 }
 
 
@@ -308,6 +320,19 @@ width: 14%;
     
 
 
+
+
+
+    /* contct page */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-right iframe {
+        height: 400px;
+    }
+
+
 }
 
 
@@ -322,6 +347,7 @@ width: 14%;
         display: none;
     }
     .hamburger {
+        display: block;
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -406,7 +432,7 @@ width: 100%;
 font-size: 16px;
 }
 .hero-content button {
-width: 180px;
+width: 220px;
 height: 45px;
 font-size: 18px;
 }
@@ -604,6 +630,32 @@ display: none;
 
 
 
+    .blog-main {
+    flex-direction: column;
+}
+.blog-left-section {
+    width: 100%;
+    flex-direction: column;
+}
+.blog-left-section .blog-card {
+    width:100%;
+}
+
+.blog-right-section {
+    width: 100%;
+}
+.blog-right-section .blog-card img {
+    height: 250px;
+}
+.blog-btn button {
+    height: 60px;
+    width: 250px;
+}
+
+
+
+
+
     /* about page */
 
     .about-preschool {
@@ -611,7 +663,36 @@ display: none;
     }
     .about-preschool .preschool-content {
         margin-top: 0px;
+        margin-bottom: 0;
     }
+    .about-preschool .preschool-bottom {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+
+
+
+
+    /* contact page */
+
+    .contact {
+        flex-direction: column;
+    padding-top: 40px;
+}
+.contact-card {
+    width: 90%;
+    margin-bottom: 20px;
+    height: auto;
+    padding: 40px;
+}
+.contact-card-img {
+    width: 10%;
+}
+.contact-card-content h2 {
+    font-size: 24px;
+}
 
 
 
@@ -632,6 +713,10 @@ display: none;
 }
 .blog-sidebar {
     width: 100%;
+}
+
+.recent-box {
+    padding: 20px;
 }
 
 
@@ -892,4 +977,15 @@ margin-top: 20px;
         width: 90px;
         height: 90px;
     }
+
+
+
+
+       /* contact page */
+.contact-card {
+    padding: 20px;
+}
+
+
+
 }
