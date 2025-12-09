@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Play School - gallery</title>
+    <title>EuroKids - Gallery</title>
+    <link rel="icon" type="image/png" href="img/favicon-eurokid.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +27,13 @@
             <div class="navbar">
 
                 <a href="index.html" class="logo-div">
-                    <img src="/img/logo.png" alt="logo">
+                    <img src="/img/logo-eurokid.svg" alt="logo">
                 </a>
 
                 <!-- NAV LINKS -->
                 <ul class="nav-links" id="navLinks">
+                    <li class="nav-call show-on-mobile"><button onclick="window.location.href='admission.html'">Admission Open</button></li>
+                    <li class="nav-call show-on-mobile"><a href="tel:+919289770777"><i class="bi bi-telephone-fill"></i> +91-92897-70777</a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="academics.html">Academics</a></li>
@@ -49,7 +52,8 @@
 
                 <!-- DESKTOP CALL BUTTON -->
                 <div class="nav-call desktop-call">
-                    <button><i class="bi bi-telephone-fill"></i> +91-98765-43210</button>
+                    <button onclick="window.location.href='admission.html'">Admission Open</button>
+                    <a href="tel:+919289770777"><i class="bi bi-telephone-fill"></i> +91-92897-70777</a>
                 </div>
 
             </div>
@@ -76,74 +80,131 @@
             <div class="container">
                 <h2 class="section-title">Happy Moments</h2>
 
-                <div class="gallery-grid">
-
-                    <div class="gallery-item">
-                        <img src="img/gallery/g-1.JPG" alt="">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/gallery/g-2.JPG" alt="">
-                    </div>
-
-                    <div class="gallery-item">
-                        <img src="img/gallery/g-3.JPG" alt="">
-                    </div>
-
-                    <div class="gallery-item tall">
-                        <img src="img/gallery/g-4.JPG" alt="">
-                    </div>
-
-                    <div class="gallery-item wide">
-                        <img src="img/gallery/g-5.JPG" alt="">
-                    </div>
-
-                    <div class="gallery-item">
-                        <img src="img/gallery/g-6.JPG" alt="">
-                    </div>
-
-                    <div class="gallery-item">
-                        <img src="img/gallery/g-7.JPG" alt="">
-                    </div>
-
-                    <div class="gallery-item wide">
-                        <img src="img/gallery/g-8.JPG" alt="">
-                    </div>
-
-                    <div class="gallery-item tall">
-                        <img src="img/gallery/g-9.JPG" alt="">
-                    </div>
-                    <div class="gallery-item tall">
-                        <img src="img/gallery/g-10.jpg" alt="">
-                    </div>
-                    <div class="gallery-item tall">
-                        <img src="img/gallery/g-11.JPG" alt="">
-                    </div>
-                    <div class="gallery-item tall">
-                        <img src="img/gallery/g-12.JPG" alt="">
-                    </div>
-                    <div class="gallery-item tall">
-                        <img src="img/gallery/g-13.JPG" alt="">
-                    </div>
-                    <div class="gallery-item tall">
-                        <img src="img/gallery/g-14.JPG" alt="">
-                    </div>
-                    <div class="gallery-item tall">
-                        <img src="img/gallery/g-15.JPG" alt="">
-                    </div>
-                    <div class="gallery-item tall">
-                        <img src="img/gallery/g-1.JPG" alt="">
-                    </div>
-
+                <!-- TABS -->
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="photos">Photos</button>
+                    <button class="tab-btn" data-tab="videos">Videos</button>
                 </div>
+
+                <div id="photos" class="tab-content active">
+                    <div class="gallery-grid">
+
+                        <div class="gallery-item">
+                            <img src="img/gallery/g-1.JPG" alt="">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/gallery/g-2.JPG" alt="">
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="img/gallery/g-3.JPG" alt="">
+                        </div>
+
+                        <div class="gallery-item tall">
+                            <img src="img/gallery/g-4.JPG" alt="">
+                        </div>
+
+                        <div class="gallery-item wide">
+                            <img src="img/gallery/g-5.JPG" alt="">
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="img/gallery/g-6.JPG" alt="">
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="img/gallery/g-7.JPG" alt="">
+                        </div>
+
+                        <div class="gallery-item wide">
+                            <img src="img/gallery/g-8.JPG" alt="">
+                        </div>
+
+                        <div class="gallery-item tall">
+                            <img src="img/gallery/g-9.JPG" alt="">
+                        </div>
+                        <div class="gallery-item tall">
+                            <img src="img/gallery/g-10.jpg" alt="">
+                        </div>
+                        <div class="gallery-item tall">
+                            <img src="img/gallery/g-11.JPG" alt="">
+                        </div>
+                        <div class="gallery-item tall">
+                            <img src="img/gallery/g-12.JPG" alt="">
+                        </div>
+                        <div class="gallery-item tall">
+                            <img src="img/gallery/g-13.JPG" alt="">
+                        </div>
+                        <div class="gallery-item tall">
+                            <img src="img/gallery/g-14.JPG" alt="">
+                        </div>
+                        <div class="gallery-item tall">
+                            <img src="img/gallery/g-15.JPG" alt="">
+                        </div>
+                        <div class="gallery-item tall">
+                            <img src="img/gallery/g-1.JPG" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- VIDEO GALLERY -->
+                <div id="videos" class="tab-content">
+                    <div class="gallery-grid">
+
+                        <div class="gallery-item video-item" data-video="img/gallery/video-1.mp4">
+                            <img src="img/gallery/g-1.JPG" alt="">
+                            <span class="play-icon">&#9658;</span>
+                        </div>
+                        <div class="gallery-item video-item" data-video="img/gallery/video-2.mp4">
+                            <img src="img/gallery/g-2.JPG" alt="">
+                            <span class="play-icon">&#9658;</span>
+                        </div>
+                        <div class="gallery-item video-item" data-video="img/gallery/video-3.mp4">
+                            <img src="img/gallery/g-3.JPG" alt="">
+                            <span class="play-icon">&#9658;</span>
+                        </div>
+                        <div class="gallery-item video-item" data-video="img/gallery/video-4.mp4">
+                            <img src="img/gallery/g-4.JPG" alt="">
+                            <span class="play-icon">&#9658;</span>
+                        </div>
+                        <div class="gallery-item video-item" data-video="img/gallery/video-5.mp4">
+                            <img src="img/gallery/g-5.JPG" alt="">
+                            <span class="play-icon">&#9658;</span>
+                        </div>
+                        <div class="gallery-item video-item" data-video="img/gallery/video-6.mp4">
+                            <img src="img/gallery/g-6.JPG" alt="">
+                            <span class="play-icon">&#9658;</span>
+                        </div>
+                        <div class="gallery-item video-item" data-video="img/gallery/video-7.mp4">
+                            <img src="img/gallery/g-7.JPG" alt="">
+                            <span class="play-icon">&#9658;</span>
+                        </div>
+                        <div class="gallery-item video-item" data-video="img/gallery/video-8.mp4">
+                            <img src="img/gallery/g-8.JPG" alt="">
+                            <span class="play-icon">&#9658;</span>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </section>
 
 
-        <!-- LIGHTBOX POPUP -->
         <div id="lightbox">
             <span class="close-btn">&times;</span>
+
+            <!-- New Navigation Buttons -->
+            <span class="prev-btn">&#10094;</span>
+            <span class="next-btn">&#10095;</span>
+
+            <!-- Image -->
             <img id="lightbox-img">
+            <!-- Video -->
+            <video id="lightbox-video" controls></video>
         </div>
+
 
 
     </main>
@@ -160,7 +221,7 @@
             </div>
             <div class="footer-main">
                 <a href="index.html" class="foot-logo">
-                    <img src="img/logo.png" alt="">
+                    <img src="img/logo-eurokid.svg" alt="">
                 </a>
                 <div class="foot-devider"></div>
                 <div class="footer-policies">
@@ -222,7 +283,8 @@
                         </div>
                         <div class="foot-social-content">Facebook</div>
                     </a>
-                    <a href="https://www.instagram.com/eurokidsnoida.122?igsh=MTV1cXdwcHFzdXBldQ==" class="foot-social" target="_blank">
+                    <a href="https://www.instagram.com/eurokidsnoida.122?igsh=MTV1cXdwcHFzdXBldQ==" class="foot-social"
+                        target="_blank">
                         <div class="foot-social-img">
                             <img src="img/insta.png" alt="">
                         </div>
@@ -274,22 +336,119 @@
 
 <!-- popup -->
 <script>
-    const galleryItems = document.querySelectorAll('.gallery-item img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.close-btn');
+    /* ---------------- TAB SYSTEM ---------------- */
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
 
-    galleryItems.forEach(img => {
-        img.addEventListener('click', () => {
-            lightbox.classList.add('show');
-            lightboxImg.src = img.src;
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
+
+            btn.classList.add('active');
+            document.getElementById(btn.dataset.tab).classList.add('active');
         });
     });
 
+    /* ---------------- LIGHTBOX ELEMENTS ---------------- */
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxVideo = document.getElementById('lightbox-video');
+
+    const closeBtn = document.querySelector('.close-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    /* ---------------- GALLERY ITEMS ---------------- */
+    const galleryImages = document.querySelectorAll('#photos .gallery-item img');
+    const videoItems = document.querySelectorAll('#videos .video-item');
+
+    /* --- Create unified array of ALL items (images + videos) --- */
+    let allItems = [];
+
+    // Add photos first
+    galleryImages.forEach(img => allItems.push(img));
+
+    // Add videos next
+    videoItems.forEach(item => allItems.push(item));
+
+    /* ---------------- STATE VARIABLES ---------------- */
+    let currentIndex = 0;
+    let isVideoMode = false;
+
+    /* ---------------- SHOW IMAGE ---------------- */
+    function showImage(src) {
+        lightbox.classList.add('show');
+
+        lightboxVideo.pause();
+        lightboxVideo.style.display = "none";
+
+        lightboxImg.src = src;
+        lightboxImg.style.display = "block";
+    }
+
+    /* ---------------- SHOW VIDEO ---------------- */
+    function showVideo(src) {
+        lightbox.classList.add('show');
+
+        lightboxImg.style.display = "none";
+
+        lightboxVideo.style.display = "block";
+        lightboxVideo.src = src;
+        lightboxVideo.play();
+    }
+
+    /* ---------------- OPEN IMAGE CLICK ---------------- */
+    galleryImages.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            currentIndex = index;
+            isVideoMode = false;
+            showImage(img.src);
+        });
+    });
+
+    /* ---------------- OPEN VIDEO CLICK ---------------- */
+    videoItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            currentIndex = galleryImages.length + index;
+            isVideoMode = true;
+            showVideo(item.dataset.video);
+        });
+    });
+
+    /* ---------------- HANDLE NEXT/PREV ---------------- */
+    function openCorrectType() {
+        const item = allItems[currentIndex];
+
+        if (item.tagName === "IMG") {
+            isVideoMode = false;
+            showImage(item.src);
+        } else {
+            isVideoMode = true;
+            showVideo(item.dataset.video);
+        }
+    }
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + allItems.length) % allItems.length;
+        openCorrectType();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % allItems.length;
+        openCorrectType();
+    });
+
+    /* ---------------- CLOSE LIGHTBOX ---------------- */
     closeBtn.addEventListener('click', () => {
         lightbox.classList.remove('show');
+
+        lightboxVideo.pause();
+        lightboxVideo.src = "";
     });
 </script>
+
+
 
 
 </html>
