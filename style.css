@@ -1780,8 +1780,12 @@ textarea {
 }
 
 .academic-card .icon {
-    font-size: 40px;
+    width: 50px;
+    margin: auto;
     margin-bottom: 20px;
+}
+.academic-card .icon img{
+    width: 100%;
 }
 
 .academic-card h3 {
@@ -1933,10 +1937,8 @@ textarea {
     align-items: center;
 }
 
-.why-item span {
-    font-size: 24px;
-    font-weight: bold;
-    color: #79a8f7;
+.why-item img {
+    width: 22px;
 }
 
 .why-item h4 {
