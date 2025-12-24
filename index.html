@@ -27,8 +27,10 @@
 
                 <!-- NAV LINKS -->
                 <ul class="nav-links" id="navLinks">
-                    <li class="nav-call show-on-mobile"><button onclick="window.location.href='admission.html'">Admission Open</button></li>
-                    <li class="nav-call show-on-mobile"><a href="tel:+919289770777"><i class="bi bi-telephone-fill"></i> +91-92897-70777</a></li>
+                    <li class="nav-call show-on-mobile"><button
+                            onclick="window.location.href='admission.html'">Admission Open</button></li>
+                    <li class="nav-call show-on-mobile"><a href="tel:+919289770777"><i class="bi bi-telephone-fill"></i>
+                            +91-92897-70777</a></li>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="academics.html">Academics</a></li>
@@ -54,6 +56,20 @@
             </div>
         </div>
     </header>
+
+
+
+
+    <!-- fixed buttons on screen -->
+    <div class="fixed-on-screen">
+        <!-- Whatsapp Button -->
+        <div class="button-container whatsapp-container" onclick="sendWhatsapp()">
+            <i class="bi bi-whatsapp icon"></i>
+            <span class="label whatsapp-label">Whatsapp Us</span>
+        </div>
+    </div>
+
+
 
 
     <main>
@@ -95,7 +111,8 @@
                             </p>
                         </div>
                         <div class="offer-back-2">
-                            <button onclick="window.location.href='services.html?service=kindergarten'" class="offer-button">Read More</button>
+                            <button onclick="window.location.href='services.html?service=kindergarten'"
+                                class="offer-button">Read More</button>
                         </div>
                         <div class="offer-alphabet">
                             <img src="img/Aa.png" alt="">
@@ -112,7 +129,8 @@
                             </p>
                         </div>
                         <div class="offer-back-2-mid">
-                            <button onclick="window.location.href='services.html?service=daycare'" class="offer-button-mid">Read More</button>
+                            <button onclick="window.location.href='services.html?service=daycare'"
+                                class="offer-button-mid">Read More</button>
                         </div>
                         <div class="offer-alphabet-mid">
                             <img src="img/Bb.png" alt="">
@@ -129,7 +147,8 @@
                             </p>
                         </div>
                         <div class="offer-back-2" style="border-color: rgb(208, 199, 19);">
-                            <button onclick="window.location.href='services.html?service=babysitting'" class="offer-button">Read More</button>
+                            <button onclick="window.location.href='services.html?service=babysitting'"
+                                class="offer-button">Read More</button>
                         </div>
                         <div class="offer-alphabet">
                             <img src="img/Cc.png" alt="">
@@ -671,7 +690,7 @@
                 </a>
                 <div class="foot-devider"></div>
                 <div class="footer-policies">
-                    <a href="contact.html">Admission Enquiry</a>
+                    <a href="near-locations.html">Nearby Locations</a>
                     <a href="privacy-policy.html">Privacy Policy</a>
                     <a href="terms.html">Terms & Condition</a>
                 </div>
@@ -729,7 +748,8 @@
                         </div>
                         <div class="foot-social-content">Facebook</div>
                     </a>
-                    <a href="https://www.instagram.com/eurokidsnoida.122?igsh=MTV1cXdwcHFzdXBldQ==" class="foot-social" target="_blank">
+                    <a href="https://www.instagram.com/eurokidsnoida.122?igsh=MTV1cXdwcHFzdXBldQ==" class="foot-social"
+                        target="_blank">
                         <div class="foot-social-img">
                             <img src="img/insta.png" alt="">
                         </div>
@@ -779,6 +799,17 @@
     });
 </script>
 
+<!-- fixed button on screen -->
+<script>
+    function sendWhatsapp() {
+        const phoneNumber = "919289770777";
+        const message = "Hello! I would like to inquire about EuroKids.";
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+    }
+</script>
+
+
 <!-- activity image  -->
 <script>
     fetch("activity-card-img-1.html")
@@ -821,7 +852,6 @@
         }
     });
 </script>
-
 <!-- swiper for team -->
 <script>
 
@@ -853,7 +883,7 @@
 
     // Auto-open popup on page load
     window.addEventListener("load", function () {
-        openPopup(); 
+        openPopup();
     });
 </script>
 

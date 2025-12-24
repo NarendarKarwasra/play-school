@@ -1,0 +1,424 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EuroKids - Near by Locations</title>
+    <link rel="icon" type="image/png" href="img/favicon-eurokid.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header class="navbar-header">
+        <div class="container">
+            <div class="navbar">
+
+                <a href="index.html" class="logo-div">
+                    <img src="/img/logo-eurokid.svg" alt="logo">
+                </a>
+
+                <!-- NAV LINKS -->
+                <ul class="nav-links" id="navLinks">
+                    <li class="nav-call show-on-mobile"><button
+                            onclick="window.location.href='admission.html'">Admission Open</button></li>
+                    <li class="nav-call show-on-mobile"><a href="tel:+919289770777"><i class="bi bi-telephone-fill"></i>
+                            +91-92897-70777</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="facilites.html">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- HAMBURGER -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- DESKTOP CALL BUTTON -->
+                <div class="nav-call desktop-call">
+                    <button onclick="window.location.href='admission.html'">Admission Open</button>
+                    <a href="tel:+919289770777"><i class="bi bi-telephone-fill"></i> +91-92897-70777</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- fixed buttons on screen -->
+    <div class="fixed-on-screen">
+        <!-- Whatsapp Button -->
+        <div class="button-container whatsapp-container" onclick="sendWhatsapp()">
+            <i class="bi bi-whatsapp icon"></i>
+            <span class="label whatsapp-label">Whatsapp Us</span>
+        </div>
+    </div>
+
+
+
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2>Nearby Locations</h2>
+                <p>HOME / <span>Locations</span></p>
+            </div>
+            <div class="banner-bottom">
+                <img src="img/section-devider-3.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="preschool about-preschool facilites-section"
+            style="background-color: #fff; margin-top: 100px; padding-bottom: 40px;">
+
+            <div class="container">
+
+                <section class="page-header">
+                    <h1>Nearby Locations</h1>
+                    <p>Everything your child needs, just minutes away from our school</p>
+                </section>
+
+                <div class="location-section">
+                    <h2 class="nearby-title">Transport & Connectivity</h2>
+                    <div class="grid-container">
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Central Metro Station</h3>
+                                <div class="icon-box"><i class="bi bi-train-freight-front-fill"></i></div>
+                            </div>
+                            <span class="distance-tag">1.2 km away</span>
+                            <p class="card-detail">Main line connecting to the city center.</p>
+                            <div class="travel-time"><i class="bi bi-person-walking"></i> 15 min walk</div>
+                        </div>
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">City Bus Stand</h3>
+                                <div class="icon-box"><i class="bi bi-bus-front-fill"></i></div>
+                            </div>
+                            <span class="distance-tag">400 m away</span>
+                            <p class="card-detail">Regular buses to North and South districts.</p>
+                            <div class="travel-time"><i class="bi bi-person-walking"></i> 5 min walk</div>
+                        </div>
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">National Highway 48</h3>
+                                <div class="icon-box"><i class="bi bi-sign-stop-lights-fill"></i></div>
+                            </div>
+                            <span class="distance-tag">3.5 km away</span>
+                            <p class="card-detail">Easy access for private transport and school vans.</p>
+                            <div class="travel-time"><i class="bi bi-car-front-fill"></i> 8 min drive</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-section">
+                    <h2 class="nearby-title"><i class="fas fa-heart-pulse"></i> Health & Safety</h2>
+                    <div class="grid-container">
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">City General Hospital</h3>
+                                <div class="icon-box"><i class="bi bi-hospital-fill"></i></div>
+                            </div>
+                            <span class="distance-tag">2.0 km away</span>
+                            <p class="card-detail">24/7 Emergency services and pediatric care.</p>
+                            <div class="travel-time"><i class="bi bi-car-front-fill"></i> 6 min drive</div>
+                        </div>
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Sunrise Pharmacy</h3>
+                                <div class="icon-box"><i class="bi bi-capsule"></i></i></div>
+                            </div>
+                            <span class="distance-tag">300 m away</span>
+                            <p class="card-detail">Well-stocked pharmacy open until 11 PM.</p>
+                            <div class="travel-time"><i class="bi bi-person-walking"></i> 4 min walk</div>
+                        </div>
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">District Police Station</h3>
+                                <div class="icon-box"><i class="bi bi-shield-shaded"></i></div>
+                            </div>
+                            <span class="distance-tag">1.5 km away</span>
+                            <p class="card-detail">Ensuring a safe and secure neighborhood.</p>
+                            <div class="travel-time"><i class="bi bi-car-front-fill"></i> 5 min drive</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-section">
+                    <h2 class="nearby-title"><i class="fas fa-cart-shopping"></i> Shopping & Essentials</h2>
+                    <div class="grid-container">
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Scholar's Stationery</h3>
+                                <div class="icon-box"><i class="bi bi-pencil-square"></i></div>
+                            </div>
+                            <span class="distance-tag">100 m away</span>
+                            <p class="card-detail">Books, uniforms, and art supplies.</p>
+                            <div class="travel-time"><i class="bi bi-person-walking"></i> 2 min walk</div>
+                        </div>
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Greenfield Supermarket</h3>
+                                <div class="icon-box"><i class="bi bi-basket-fill"></i></div>
+                            </div>
+                            <span class="distance-tag">800 m away</span>
+                            <p class="card-detail">Fresh groceries and daily essentials.</p>
+                            <div class="travel-time"><i class="bi bi-car-front-fill"></i> 3 min drive</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-section">
+                    <h2 class="nearby-title"><i class="fas fa-tree"></i> Recreation & Culture</h2>
+                    <div class="grid-container">
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Centennial Public Park</h3>
+                                <div class="icon-box"><i class="bi bi-tree-fill"></i></div>
+                            </div>
+                            <span class="distance-tag">600 m away</span>
+                            <p class="card-detail">Jogging tracks, kids' play area, and greenery.</p>
+                            <div class="travel-time"><i class="bi bi-person-walking"></i> 8 min walk</div>
+                        </div>
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">City Central Library</h3>
+                                <div class="icon-box"><i class="bi bi-book-half"></i></div>
+                            </div>
+                            <span class="distance-tag">2.5 km away</span>
+                            <p class="card-detail">Vast collection of academic and fiction books.</p>
+                            <div class="travel-time"><i class="bi bi-bus-front-fill"></i> 10 min bus ride</div>
+                        </div>
+                        <div class="location-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Science Museum</h3>
+                                <div class="icon-box"><i class="bi bi-kanban"></i></div>
+                            </div>
+                            <span class="distance-tag">5.0 km away</span>
+                            <p class="card-detail">Educational exhibits and weekend workshops.</p>
+                            <div class="travel-time"><i class="bi bi-car-front-fill"></i> 15 min drive</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="preschool about-preschool facilites-section"
+            style="background-color: #fff; margin-top: 20px; padding-bottom: 40px;">
+
+            <div class="container">
+
+                <section class="section map-section">
+                    <h2>School Location Map</h2>
+                    <p>Find us easily with nearby landmarks</p>
+
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.085797808345!2d77.4036734!3d28.597202799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef62d4a7e309%3A0x38b3d2edb626906d!2sEuroKids%20Pre-School%20Noida-Sec%20122!5e0!3m2!1sen!2sin!4v1765182379051!5m2!1sen!2sin"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+
+
+
+        <section class="preschool about-preschool facilites-section"
+            style="background-color: #E9F4FF; margin-top: 40px; padding-bottom: 40px;">
+
+            <div class="container">
+
+                <section class="section highlight-section">
+                    <h2>Why Our Location Is Ideal for Students</h2>
+
+                    <div class="highlights">
+                        <div class="highlight-box">
+                            <div class="highlight-box-img">
+                                <img src="img/nearby-hospital.png" alt="">
+                            </div>
+                            <h3>Safety First</h3>
+                            <p>Nearby hospitals and clinics ensure quick emergency response.</p>
+                        </div>
+
+                        <div class="highlight-box">
+                            <div class="highlight-box-img">
+                                <img src="img/nearby-vehicles.png" alt="">
+                            </div>
+                            <h3>Easy Commute</h3>
+                            <p>Multiple transport options make daily travel smooth and stress-free.</p>
+                        </div>
+
+                        <div class="highlight-box">
+                            <div class="highlight-box-img">
+                                <img src="img/nearby-family.png" alt="">
+                            </div>
+                            <h3>Family Friendly</h3>
+                            <p>Surrounded by peaceful residential areas ideal for families.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="top-devider">
+            <img src="/img/section-devider-4.png" alt="">
+        </div>
+        <div class="container">
+            <div class="left-footer-part">
+                <img src="img/Cloud.webp" style="margin-left: -80px;" alt="">
+            </div>
+            <div class="footer-main">
+                <a href="index.html" class="foot-logo">
+                    <img src="img/logo-eurokid.svg" alt="">
+                </a>
+                <div class="foot-devider"></div>
+                <div class="footer-policies">
+                    <a href="near-locations.html">Nearby Locations</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Condition</a>
+                </div>
+                <div class="foot-devider"></div>
+                <div class="footer-contact">
+                    <div class="footer-contact-single">
+                        <div class="foot-cont-img">
+                            <img src="img/mail.png" alt="">
+                        </div>
+                        <div class="foot-cont-contact foot-cont-contact-mail">
+                            <h3>Support Email</h3>
+                            <p>jpeducation.eurokids @gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-single">
+                        <div class="foot-cont-img">
+                            <img src="img/call.png" alt="">
+                        </div>
+                        <div class="foot-cont-contact">
+                            <h3>Emergency Call</h3>
+                            <p>+91-92897-70777</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-single">
+                        <div class="foot-cont-img">
+                            <img src="img/location.png" alt="">
+                        </div>
+                        <div class="foot-cont-contact">
+                            <h3>Our Location</h3>
+                            <p>Pkb-74, Sector-122, Noida, Uttar Pradesh 201316</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-footer-part">
+                <img src="img/activity-pattern-2.webp" alt="">
+            </div>
+        </div>
+        <div class="bottom-devider">
+            <img src="/img/section-devider-3.png" alt="">
+        </div>
+    </footer>
+
+    <footer>
+        <div class="container">
+            <div class="left-footer-part">
+                <img src="img/pattern-down-right.webp" alt="">
+            </div>
+            <div class="footer-social-main">
+                <h4>Follow Us On :</h4>
+                <div class="foot-social-container">
+                    <a href="" class="foot-social">
+                        <div class="foot-social-img">
+                            <img src="img/facebook.png" alt="">
+                        </div>
+                        <div class="foot-social-content">Facebook</div>
+                    </a>
+                    <a href="https://www.instagram.com/eurokidsnoida.122?igsh=MTV1cXdwcHFzdXBldQ==" class="foot-social"
+                        target="_blank">
+                        <div class="foot-social-img">
+                            <img src="img/insta.png" alt="">
+                        </div>
+                        <div class="foot-social-content">Instagram</div>
+                    </a>
+                    <a href="" class="foot-social">
+                        <div class="foot-social-img">
+                            <img src="img/twitter.png" alt="">
+                        </div>
+                        <div class="foot-social-content">Twitter</div>
+                    </a>
+                </div>
+            </div>
+            <div class="right-footer-part">
+                <img src="img/Plane.webp" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<!-- navbar hemberger -->
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    const mobileCall = document.getElementById("mobileCall");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        mobileCall.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    });
+</script>
+<!-- for navbar click animation -->
+<script>
+    const links = document.querySelectorAll('.nav-links a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function () {
+            // Remove active from all
+            links.forEach(l => l.classList.remove('active'));
+
+            // Add active to clicked one
+            this.classList.add('active');
+        });
+    });
+</script>
+
+<!-- fixed button on screen -->
+<script>
+    function sendWhatsapp() {
+        const phoneNumber = "919289770777";
+        const message = "Hello! I would like to inquire about EuroKids.";
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+    }
+</script>
+
+</html>

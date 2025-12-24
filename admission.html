@@ -62,6 +62,15 @@
     </header>
 
 
+    <!-- fixed buttons on screen -->
+    <div class="fixed-on-screen">
+        <!-- Whatsapp Button -->
+        <div class="button-container whatsapp-container" onclick="sendWhatsapp()">
+            <i class="bi bi-whatsapp icon"></i>
+            <span class="label whatsapp-label">Whatsapp Us</span>
+        </div>
+    </div>
+
 
     <main>
         <section class="about">
@@ -138,7 +147,7 @@
                 </a>
                 <div class="foot-devider"></div>
                 <div class="footer-policies">
-                    <a href="contact.html">Admission Enquiry</a>
+                    <a href="near-locations.html">Nearby Locations</a>
                     <a href="privacy-policy.html">Privacy Policy</a>
                     <a href="terms.html">Terms & Condition</a>
                 </div>
@@ -245,6 +254,16 @@
             this.classList.add('active');
         });
     });
+</script>
+
+<!-- fixed button on screen -->
+<script>
+    function sendWhatsapp() {
+        const phoneNumber = "919289770777";
+        const message = "Hello! I would like to inquire about EuroKids.";
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+    }
 </script>
 
 </html>

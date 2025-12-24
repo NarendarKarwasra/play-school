@@ -931,6 +931,14 @@
 
 
 @media (max-width: 480px) {
+    /* fixed buttons on screen for contact */
+.fixed-on-screen {
+  bottom: 0%;
+  transform: translateY(-40%);
+  gap: 10px;
+}
+
+
     .hero-heading {
         font-size: 28px;
         line-height: 34px;
