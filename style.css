@@ -3215,9 +3215,6 @@ textarea {
 }
 
 
-
-
-/* MAP */
 .map-section {
     text-align: center;
 }
@@ -3296,14 +3293,6 @@ textarea {
         font-size: 22px;
     }
 }
-
-
-
-
-
-
-
-
 
         .location-section {
             margin-bottom: 40px;
@@ -3393,8 +3382,9 @@ textarea {
             gap: 5px;
         }
 
-        /* --- 6. RESPONSIVE DESIGN --- */
+        /* --- RESPONSIVE DESIGN --- */
         @media (max-width: 768px) {
-            header h1 { font-size: 2rem; }
             .section-title { font-size: 1.5rem; }
         }
+
+
