@@ -3307,6 +3307,7 @@ textarea {
 @media (max-width: 768px) {
     .page-header h1 {
         font-size: 28px;
+        padding-top: 20px;
     }
 
     .section h2 {
@@ -3333,13 +3334,13 @@ textarea {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    gap: 14px;
 }
 
 .location-card {
     background: #e9f4ff;
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 14px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -3407,4 +3408,71 @@ textarea {
     .section-title {
         font-size: 1.5rem;
     }
+}
+
+
+
+
+
+
+
+
+.sector-grid-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.sector-location-card {
+    background: #e9f4ff;
+    border-radius: 12px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sector-location-card:hover {
+    transform: translateY(-5px);
+}
+.sector-card-header {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.custom-table {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+  border: 1px solid #5CAEFF;
+  background: #E9F4FF;
+}
+.custom-table td {
+  width: 50%;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border: 1px solid #cee6ff;
+}
+.left {
+  font-size: 16px;
+}
+.right {
+  color: #555;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .custom-table,
+  .custom-table tbody,
+  .custom-table tr,
+  .custom-table td {
+    display: block;
+    width: 100%;
+  }
+  .custom-table td {
+    padding: 0;
+  }
+  .box {
+    margin-bottom: 0px;
+  }
 }
