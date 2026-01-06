@@ -3568,6 +3568,17 @@ textarea {
         font-size: 18px;
         font-weight: 600;
     }
+
+
+    .hero-highlight li {
+    list-style: none;
+}
+
+.hero-btn-head {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
 }
 
 
