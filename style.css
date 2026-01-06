@@ -224,7 +224,7 @@ body {
 }
 
 .hero-content {
-    padding-top: 170px;
+    padding-top: 60px;
 }
 
 .hero-subheading {
@@ -237,31 +237,57 @@ body {
 
 .hero-heading {
     color: #3d3d3d;
-    font-size: 50px;
-    font-weight: 800;
-    margin-bottom: 20px;
-    width: 50%;
-    line-height: 56px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 40%;
+    line-height: 50px;
 }
 
 .hero-description {
     color: #7b7b7b;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 40%;
 }
 
-.hero-content button {
-    height: 50px;
-    width: 220px;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    border-radius: 6px;
-    color: #fff;
-    cursor: pointer;
+.hero-highlight {
+    margin-left: 20px;
+    color: #7b7b7b;
+}
+
+.hero-btn-head {
     margin-top: 20px;
+    font-size: 18px;
+    width: 40%;
+    color: #FF712A;
+}
+.book-btn {
+    padding: 6px 20px;
+    margin-top: 14px;
+    margin-left: 6px;
+    border: none;
+    color: white;
+    background: #ff9f6f;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+}
+.book-btn:hover {
+    background: #ff7530;
+}
+.book-btn::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #ff9f6f;
+    border-radius: 6px;
 }
 
 
@@ -407,9 +433,11 @@ body {
 
 .offer-cards {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 50px;
+    gap: 50px;
 }
 
 .offer-card {
@@ -569,7 +597,7 @@ body {
 
 .offer-detail p {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 24px;
     color: #636363;
 }
 
@@ -734,7 +762,7 @@ body {
     width: 46%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .activity-card-img {
@@ -770,7 +798,7 @@ body {
 
 .activities-right img {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 
@@ -3475,4 +3503,136 @@ textarea {
   .box {
     margin-bottom: 0px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* home page */
+
+.why-eurokids-grid {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-eurokids-card {
+    background: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.why-eurokids-card img {
+    width: 65px;
+    margin-bottom: 15px;
+}
+
+.why-eurokids-card:hover {
+    transform: translateY(-10px);
+}
+
+.why-eurokids-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #606060;
+}
+
+
+
+@media (max-width: 768px) {
+    .why-eurokids-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .why-eurokids-card {
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .why-eurokids-card h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .why-eurokids-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .why-eurokids-card {
+    border-radius: 10px;
+    padding: 20px;
+}
+}
+
+
+
+
+.test-star-div {
+    margin-top: 6px;
+}
+.test-star-div img{
+    width: 20px;
+}
+
+
+
+.review-btn-head {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #84c1ff;
+}
+
+.review-btn {
+    padding: 10px 40px;
+    margin-top: 14px;
+    margin-left: 6px;
+    border: none;
+    color: white;
+    background: #84c1ff;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+}
+.review-btn:hover {
+    background: #399cff;
+}
+.review-btn::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #84c1ff;
+    border-radius: 6px;
+}
+
+
+.section-full-devider {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    height: 2px;
+    background: #dfdfdf;
 }
