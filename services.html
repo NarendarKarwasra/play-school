@@ -42,7 +42,6 @@
                     <li><a href="facilites.html">Facilities</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="blog.html">Blogs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
 
                 <!-- HAMBURGER -->
@@ -54,8 +53,10 @@
 
                 <!-- DESKTOP CALL BUTTON -->
                 <div class="nav-call desktop-call">
-                    <button onclick="window.location.href='admission.html'">Admission Open</button>
-                    <a href="tel:+919289770777"><i class="bi bi-telephone-fill"></i> +91-92897-70777</a>
+                    <button onclick="window.location.href='admission-open.html'" class="nav-ad-open">Admission
+                        Open</button>
+                    <button onclick="window.location.href='admission.html'">Admission Enquiry</button>
+                    <a href="tel:+919289770777" class="nav-phone"><i class="bi bi-telephone-fill"></i>+91-92897-70777</a>
                 </div>
 
             </div>
@@ -94,10 +95,11 @@
                             <h2>All Service</h2>
 
                             <ul class="service-tabs">
+                                <li data-service="eurotots">Euro Tots <span>→</span></li>
+                                <li data-service="playgroup">Playgroup <span>→</span></li>
+                                <li data-service="nursery">Nursery <span>→</span></li>
                                 <li data-service="kindergarten">Kindergarten <span>→</span></li>
-                                <li data-service="daycare">Day Care <span>→</span></li>
-                                <li data-service="babysitting">Baby Sitting <span>→</span></li>
-                                <li data-service="nanny">Nanny Care <span>→</span></li>
+                                <li data-service="daycare">Daycare <span>→</span></li>
                             </ul>
                         </div>
 
@@ -179,7 +181,7 @@
 
                         </div>
 
-                        <div class="daycare-section">
+                        <div class="daycare-section" style="background: none;">
 
                             <h2 class="daycare-title">When Babies Can Start Daycare</h2>
 
@@ -328,6 +330,7 @@
                 <div class="foot-devider"></div>
                 <div class="footer-policies">
                     <a href="near-locations.html">Nearby Locations</a>
+                    <a href="contact.html">Contact Us</a>
                     <a href="privacy-policy.html">Privacy Policy</a>
                     <a href="terms.html">Terms & Condition</a>
                 </div>
@@ -392,12 +395,6 @@
                         </div>
                         <div class="foot-social-content">Instagram</div>
                     </a>
-                    <a href="" class="foot-social">
-                        <div class="foot-social-img">
-                            <img src="img/twitter.png" alt="">
-                        </div>
-                        <div class="foot-social-content">Twitter</div>
-                    </a>
                 </div>
             </div>
             <div class="right-footer-part">
@@ -440,25 +437,30 @@
 <!-- services -->
 <script>
     const serviceData = {
+        eurotots: {
+            img: "/img/blog-1.webp",
+            title: "Euro Tots",
+            desc: "A gentle introduction to school life focusing on sensory development, motor skills, emotional bonding, and joyful play."
+        },
+        playgroup: {
+            img: "/img/blog-4.webp",
+            title: "Playgroup",
+            desc: "Encourages curiosity, communication, creativity, and social interaction through structured play and activities."
+        },
+        nursery: {
+            img: "/img/blog-6.webp",
+            title: "Nursery",
+            desc: "Builds strong foundations in language, numeracy, creativity, and self-expression to prepare children for formal learning."
+        },
         kindergarten: {
             img: "/img/blog-1.webp",
             title: "Kindergarten Program",
-            desc: "A fun-filled environment to help children learn, play and grow."
+            desc: "Focuses on reading readiness, logical thinking, problem-solving, and confidence building for a smooth transition to primary school."
         },
         daycare: {
             img: "/img/blog-3.webp",
             title: "Day Care Services",
-            desc: "Our day care program ensures safety, fun, and care for children throughout the day."
-        },
-        babysitting: {
-            img: "/img/blog-4.webp",
-            title: "Baby Sitting",
-            desc: "We provide professional baby sitting services with trained and caring staff."
-        },
-        nanny: {
-            img: "/img/blog-6.webp",
-            title: "Nanny Care",
-            desc: "Personalized nanny care to ensure comfort and safety at your home."
+            desc: "Our EuroKids Daycare in Noida Sector 122 is designed for working parents who want more than just supervision."
         },
     };
 
